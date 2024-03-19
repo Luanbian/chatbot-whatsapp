@@ -6,5 +6,12 @@ namespace ChatBotApp
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            SendMessage send = new();
+            send.Perform("Essa é uma mensagem enviada por um bot", "Maria");
+
+        }
     }
 }
